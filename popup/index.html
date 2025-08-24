@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWorld Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Beautiful Destinations</h1>
+        <p>Your journey to the world begins here!</p>
+        <a href="#destinations" class="btn-primary">Explore Now</a>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+      <h2>Top Destinations</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="c-8.png" alt="Paris" />
+          <h3>Paris</h3>
+          <p>Starting at ₹69,999</p>
+        </div>
+        <div class="card">
+          <img src="c-7.png" alt="Bali" />
+          <h3>Bali</h3>
+          <p>Starting at ₹49,999</p>
+        </div>
+        <div class="card">
+          <img src="c-1.png" alt="Dubai" />
+          <h3>Dubai</h3>
+          <p>Starting at ₹59,999</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup Form -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-form">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2>Want To Go For A Memorable Holiday?</h2>
+
+        <div class="form-row">
+          <input type="text" placeholder="Package Name / Destination Name" />
+        </div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Date of Departure" />
+        </div>
+
+        <div class="form-row two-cols">
+          <input type="text" placeholder="City of Departure" />
+          <input type="text" placeholder="Phone Number" />
+        </div>
+
+        <div class="form-row two-cols">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your E-mail Address" />
+        </div>
+
+        <div class="form-row three-cols">
+          <label
+            >Adult<br />
+            <div class="counter">
+              <button onclick="changeCount('adult', -1)">−</button>
+              <span id="adultCount">1</span>
+              <button onclick="changeCount('adult', 1)">+</button>
+            </div>
+          </label>
+          <label
+            >Child<br />
+            <div class="counter">
+              <button onclick="changeCount('child', -1)">−</button>
+              <span id="childCount">0</span>
+              <button onclick="changeCount('child', 1)">+</button>
+            </div>
+          </label>
+          <label
+            >Infant<br />
+            <div class="counter">
+              <button onclick="changeCount('infant', -1)">−</button>
+              <span id="infantCount">0</span>
+              <button onclick="changeCount('infant', 1)">+</button>
+            </div>
+          </label>
+        </div>
+
+        <button class="submit-btn">Enquire Now</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
